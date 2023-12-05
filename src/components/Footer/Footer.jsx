@@ -27,7 +27,7 @@ const Footer = ({ bg, container }) => {
                             <a href="!#" className='footer__item-link'>Only on Netflix</a>
                         </li>
                         <li className='footer__item'>
-                            <a href="netflix/content" className='footer__item-link'>Media Center</a>
+                            <a href="/netflix/content" className='footer__item-link'>Media Center</a>
                             <a href="!#" className='footer__item-link'>Terms of Use</a>
                             <a href="!#" className='footer__item-link'>Contact Us</a>
                         </li>
