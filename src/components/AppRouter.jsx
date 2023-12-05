@@ -8,9 +8,9 @@ import ContentIdPage from '../pages/ContentIdPage';
 const AppRouter = () => {
     return (
         <Routes>
-            <Route path="/" element={<Main />} />
-            <Route exact path="/content" element={<Content />} />
-            <Route exact path="/content/:id" element={<ContentIdPage />} />
+            <Route path="/netflix" element={<Main />} />
+            <Route exact path="/netflix/content" element={<Content />} />
+            <Route exact path="/netflix/content/:id" element={<ContentIdPage />} />
             <Route path="*" element={<Error />} />
         </Routes>
     );
