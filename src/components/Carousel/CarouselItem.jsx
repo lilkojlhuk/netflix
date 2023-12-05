@@ -8,7 +8,7 @@ const CarouselItem = ({ e }) => {
 
     return (
         <div className='carousel__item'>
-            <img src={e.img} alt="Carousel img" className='carousel__item-img' onClick={() => router(`netflix/content/${e.id}`)} />
+            <img src={e.img} alt="Carousel img" className='carousel__item-img' onClick={() => router(`/netflix/content/${e.id}`)} />
             <h2 className='carousel__item-title'>{e.title}</h2>
         </div>
     );
