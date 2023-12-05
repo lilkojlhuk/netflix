@@ -1,0 +1,113 @@
+// ========== [ variables open ] ==========
+@import '../../style/variables.scss';
+// ========== [ variables close ] ==========
+
+.heroShow {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #1b1b1b;
+
+    &-bg{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 90%; 
+        height: 100%;
+        background-repeat: no-repeat; 
+        background-size: cover;
+        background-position: center;
+        z-index: 1;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 65%; 
+        height: 100%;
+        background: linear-gradient(90deg,#181818 10%,hsla(0,0%,9%,1) 20%,hsla(0,0%,9%,1) 25%,hsla(0,0%,9%,.95) 35%,
+                    hsla(0,0%,9%,.94) 40%,hsla(0,0%,9%,.92) 45%,hsla(0,0%,9%,.9) 50%,hsla(0,0%,9%,.87) 55%,hsla(0,0%,9%,.82)
+                    60%,hsla(0,0%,9%,.75) 65%,hsla(0,0%,9%,.63) 70%,hsla(0,0%,9%,.45) 75%,hsla(0,0%,9%,.27) 80%,hsla(0,0%,9%,.15) 
+                    85%,hsla(0,0%,9%,.08) 90%,hsla(0,0%,9%,.03) 95%,hsla(0,0%,9%,0));
+        z-index: 2;
+    }
+
+    &__content{
+        position: relative;
+        z-index: 3;
+        padding-left: 40px;
+    }
+
+    &__img{
+        max-width: 450px;
+        margin: 140px 0 65px 0;
+
+        @media (max-width: $breakpoint1450) {
+            margin: 90px 0 65px 0;
+        }
+
+        @media (max-width: $breakpoint768) {
+            margin: 65px 0 65px 0;
+        }
+
+        @media (max-width: $breakpoint480) {
+            max-width: 330px;
+        }
+    }
+
+    &__title{
+        color: #fff;
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+
+    &__info{
+        display: flex;
+        column-gap: 10px;
+        align-items: center;
+        margin-bottom: 20px;
+
+        & span{
+            font-size: 18px;
+        }
+    }
+
+    &__item{
+        font-size: 14px;
+        color: #a3a3a3;
+        font-weight: 500;
+
+        &.age{
+            padding: 3px 7px;
+            border: 1px solid #a3a3a3;
+        }
+    }
+
+    &__descr{
+        color: #fff;
+        font-size: 16px;
+        max-width: 540px;
+        line-height: 23px;
+        font-weight: 500;
+        margin-bottom: 20px;
+
+        @media (max-width: $breakpoint480) {
+            font-size: 14px;
+        }
+    }
+
+    &__role{
+        color: #fff;
+        font-size: 14px;
+        max-width: 540px;
+        line-height: 23px;
+        font-weight: 500;
+
+        & span{
+            color: #a3a3a3;
+        }
+    }
+}

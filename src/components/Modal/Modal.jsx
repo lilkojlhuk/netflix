@@ -1,0 +1,16 @@
+import React from 'react';
+import './Modal.scss'
+
+const Modal = ({ active, setActive, children }) => {
+    return (
+        <div className={active ? 'modal active' : 'modal'} onClick={() => setActive(false)}>
+            <div className='modal__content' onClick={e => e.stopPropagation()}>
+                <div className="modal__scrollable-content">
+                    {children}
+                </div>
+            </div>
+        </div>
+    );
+};
+
+export default Modal;

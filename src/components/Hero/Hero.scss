@@ -1,0 +1,56 @@
+// ========== [ variables open ] ==========
+@import '../../style/variables.scss';
+// ========== [ variables close ] ==========
+
+.hero{
+    &__content{
+        text-align: center;
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://assets.nflxext.com/ffe/siteui/vlv3/b85863b0-0609-4dba-8fe8-d0370b25b9ee/ab23c551-eaf1-40db-b9f7-b0854b005a9c/UA-en-20230731-popsignuptwoweeks-perspective_alpha_website_small.jpg') no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 650px;
+        width: 100%;
+        padding-top: 240px;
+
+        @media (max-width: $breakpoint992) {
+            height: 500px;
+            padding-top: 160px;
+        }
+
+        @media (max-width: 398px) {
+            padding-top: 100px;
+            height: 450px;
+        }
+    }
+
+    &__title{
+        color: #fff;
+        font-size: 46px;
+        font-weight: 700;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 20px;
+
+        @media (max-width: $breakpoint992) {
+            font-size: 34px;
+        }
+
+        @media (max-width: 398px) {
+            font-size: 28px;
+        }
+    }
+
+    &__descr{
+        color: #fff;
+        font-size: 20px;
+        margin-bottom: 25px;
+
+        @media (max-width: $breakpoint992) {
+            font-size: 16px;
+        }
+
+        @media (max-width: 398px) {
+            font-size: 14px;
+        }
+    }
+}

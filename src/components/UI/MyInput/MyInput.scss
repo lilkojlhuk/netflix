@@ -1,0 +1,48 @@
+.myinput {
+    &__text {
+        color: #fff;
+        font-size: 16px;
+        font-weight: 600;
+
+        @media (max-width: 398px) {
+            font-size: 12px;
+        }
+    }
+
+    &__input {
+        margin-top: 20px;
+        padding: 15px 7px;
+        width: 100%;
+        max-width: 400px;
+        font-size: 16px;
+        outline: none;
+        background: rgba(23, 22, 22, 0.8);
+        color: #fff;
+        margin-right: 7px;
+        border-radius: 5px;
+        border: 1px solid gray;
+        margin-bottom: 15px;
+
+        @media (max-width: 398px) {
+            padding: 10px 7px;
+        }
+    }
+
+    &__btn {
+        padding: 15px 20px;
+        align-items: center;
+        font-size: 16px;
+        color: #fff;
+        background: #E50914;
+        border-radius: 5px;
+
+        &:hover {
+            background: #9e060e;
+        }
+
+        @media (max-width: 398px) {
+            font-size: 14px;
+            padding: 10px 15px;
+        }
+    }
+}

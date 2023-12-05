@@ -1,0 +1,68 @@
+// ========== [ variables open ] ==========
+@import '../../style/variables.scss';
+// ========== [ variables close ] ==========
+
+.children{
+    background: #000;
+
+    &__content{
+        padding: 40px 0 80px 0
+    }
+
+    &__list{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media (max-width: $breakpoint992) {
+            margin-top: 20px;
+            flex-direction: column-reverse;
+        }
+    }
+
+    &__item{
+        &-title{
+            color: #fff;
+            font-size: 50px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            max-width: 650px;
+            line-height: 65px;
+
+            @media (max-width: $breakpoing1200) {
+                font-size: 40px;
+            }
+
+            @media (max-width: $breakpoint992) {
+                font-size: 30px;
+                max-width: 2000px;
+                text-align: center;
+            }
+        }
+
+        &-descr{
+            color: #fff;
+            max-width: 600px;
+            font-size: 20px;
+            line-height: 27px;
+
+            @media (max-width: $breakpoing1200) {
+                font-size: 16px;
+            }
+
+            @media (max-width: $breakpoint992) {
+                max-width: 2000px;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+        }
+
+        &-img{
+            width: 100%;
+
+            @media (max-width: $breakpoing1200) {
+                max-width: 400px;
+            }
+        }
+    }
+}

@@ -1,0 +1,65 @@
+// ========== [ variables open ] ==========
+@import '../../../style//variables.scss';
+// ========== [ variables close ] ==========
+
+.form{
+    align-items: center;
+    background: black;
+    display: flex;
+    padding: 0 10px;
+    border-radius: 30px;
+    border: 2px solid rgb(71, 71, 71);
+    max-width: 350px;
+
+    @media (max-width: $breakpoint992) {
+        max-width: 300px;
+    }
+
+    @media (max-width: $breakpoint768) {
+        max-width: 250px;
+    }
+
+    @media (max-width: 280px) {
+        max-width: 150px;
+        padding: 0;
+    }    
+
+    &__input{
+        border-radius: 30px;
+        max-width: 350px;
+        padding: 10px 20px;
+        background: black;
+        outline: none;
+        font-size: 16px;
+        color: #fff;
+        margin: 0 auto;
+
+        @media (max-width: $breakpoint992) {
+            max-width: 250px;
+        }
+
+        @media (max-width: $breakpoint768) {
+            max-width: 200px;
+            padding: 7px 15px;
+            font-size: 14px;
+        }
+
+        @media (max-width: 280px) {
+            max-width: 100px;
+        }
+    }
+
+    &__search{
+        cursor: pointer;
+        font-size: 24px;
+        color: #fff;
+
+        @media (max-width: $breakpoint768) {
+            font-size: 18px;
+        }
+
+        @media (max-width: 280px) {
+            display: none;
+        }
+    }
+}

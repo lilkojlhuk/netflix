@@ -1,0 +1,98 @@
+// ========== [ variables open ] ==========
+@import '../../style/variables.scss';
+// ========== [ variables close ] ==========
+
+.accordion{
+    background: #000;
+
+    &__content{
+        padding: 16px;
+    }
+
+    &__title{
+        font-size: 42px;
+        color: #fff;
+        font-weight: 700;
+        text-align: center;
+        margin: 50px 0 30px 0;
+
+        @media (max-width: $breakpoint992) {
+            font-size: 32px;
+        }
+    }
+
+    &__item{
+        background: #fff;
+        margin-bottom: 10px;
+
+        &-title{
+            position: relative;
+            width: 100%;
+            padding: 20px 60px 20px 30px;
+            background: #2d2d2d;
+            color: #fff;
+            border: 0;
+            font-size: 22px;
+            font-weight: 500;
+            text-align: left;
+            cursor: pointer;
+            transition: 0.1s;
+
+            @media (max-width: $breakpoint992) {
+                font-size: 16px;
+            }
+
+            &:hover{
+                background: #4e4e4e;
+            }
+        }
+
+        &-descr{
+            border-top: 1px solid black;
+            padding: 15px 30px 30px 30px;
+            background: #2d2d2d;
+            color: #fff;
+            font-size: 20px;
+            line-height: 30px;
+
+            @media (max-width: $breakpoint992) {
+                font-size: 16px;
+            }
+        }
+
+        &-collaps{
+            height: 0;
+            overflow: hidden;
+            transition: 0.3s;
+
+            &.open{
+                height: auto;
+            }
+        }
+
+        &-cross{
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            display: block;
+            font-size: 34px;
+            color: #fff;
+            transform: translateY(-50%);
+            
+            &.active{
+                transform: translateY(-50%)  rotate(45deg);
+            }
+
+            @media (max-width: $breakpoint992) {
+                font-size: 20px;
+            }
+        }
+    }
+
+    &__form{
+        display: flex;
+        justify-content: center;
+        margin: 60px 0;
+    }
+}
+

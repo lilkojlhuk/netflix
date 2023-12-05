@@ -1,0 +1,72 @@
+// ========== [ variables open ] ==========
+@import '../../style/variables.scss';
+// ========== [ variables close ] ==========
+
+.error{
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://assets.nflxext.com/ffe/siteui/vlv3/b85863b0-0609-4dba-8fe8-d0370b25b9ee/ab23c551-eaf1-40db-b9f7-b0854b005a9c/UA-en-20230731-popsignuptwoweeks-perspective_alpha_website_small.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+ 
+    &__logo{
+        max-width: 137px;
+    }
+
+    &__content{
+        text-align: center;
+    }
+
+    &__title{
+        margin: 150px 0 50px 0;
+        font-size: 54px;
+        font-weight: 700;
+        color: #fff;
+
+        @media (max-width: $breakpoint992) {
+            font-size: 42px;
+        }
+
+        @media (max-width: $breakpoint768) {
+            font-size: 32px;
+        }
+    }
+
+    &__descr{
+        font-size: 22px;
+        font-weight: 500;
+        color: #fff;
+        margin-bottom: 60px;
+        line-height: 30px;
+
+        @media (max-width: $breakpoint992) {
+            font-size: 18px;
+        }
+
+        @media (max-width: $breakpoint768) {
+            font-size: 16px;
+        }
+    }
+
+    &__btn{
+        color: black;
+        background: #fff;
+        padding: 10px 25px;
+        font-size: 16px;
+        font-weight: 600;
+        border-radius: 5px;
+        transition: 0.3s;
+
+        &:hover{
+            background: #c2c2c2;
+        }
+
+        @media (max-width: $breakpoint992) {
+            padding: 7px 20px;
+        }
+
+        @media (max-width: $breakpoint768) {
+            padding: 7px 15px;
+            font-size: 14px;
+        }
+    }
+}

@@ -1,0 +1,30 @@
+.test{
+    background: #181818;
+    &__list{
+        display: flex;
+        column-gap: 30px;
+        flex-wrap: wrap;
+        row-gap: 30px;
+        justify-content: center;
+        list-style: none;
+    }
+
+    &__item{
+        &-title{
+            color: #000;
+        }
+    
+        &-img{
+            max-width: 250px;
+        }
+    }
+
+    &__search{
+        margin-bottom: 100px;
+
+        &-input{
+            padding: 10px 20px;
+            border: 1px solid black;
+        }
+    }
+}

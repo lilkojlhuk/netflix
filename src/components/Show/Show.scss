@@ -1,0 +1,187 @@
+// ========== [ variables open ] ==========
+@import '../../style/variables.scss';
+// ========== [ variables close ] ==========
+
+.show{
+    padding-bottom: 100px;
+    background: #181818;
+
+    &__title{
+        padding: 60px 0 40px 0;
+        font-size: 50px;
+        font-weight: 700;
+        color: #fff;
+
+        @media (max-width: $breakpoint992) {
+            font-size: 40px;
+        }
+
+        @media (max-width: $breakpoint768) {
+            padding: 40px 0 30px 0;
+        }
+
+        @media (max-width: $breakpoint480) {
+            font-size: 30px;
+        }
+    }
+
+    &__subtitle{
+        font-size: 34px;
+        font-weight: 600;
+        text-align: center;
+        background: #181818;
+        color: #fff;
+        margin: 50px 0 25px 0;
+
+        @media (max-width: $breakpoint992) {
+            font-size: 28px;
+        }
+
+        @media (max-width: $breakpoint480) {
+            font-size: 20px;
+        }
+    }
+
+    &__descr{
+        font-size: 18px;
+        font-weight: 500;
+        color: #fff;
+        max-width: 650px;
+        line-height: 25px;
+        margin-bottom: 20px;
+
+        @media (max-width: $breakpoint992) {
+            font-size: 16px;
+        }
+
+        @media (max-width: $breakpoint480) {
+            font-size: 14px;
+        }
+    }
+
+    &__subdescr{
+        font-size: 18px;
+        font-weight: 500;
+        color: #fff;
+        max-width: 650px;
+        line-height: 25px;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: -50px;
+
+        @media (max-width: $breakpoint992) {
+            font-size: 16px;
+        }
+
+        @media (max-width: $breakpoint480) {
+            font-size: 14px;
+            margin-bottom: -70px;
+        }
+    }
+
+    &__list{
+        &.addtop{
+            margin-top: 70px;
+
+            @media (max-width: $breakpoint992) {
+                margin-top: 50px;
+            }
+
+            @media (max-width: $breakpoint480) {
+                margin-top: 40px;
+            }
+        }
+
+        &-blur{
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 25px;
+        }
+    }
+
+    &__item{
+        &.category{
+            margin: 50px 0 20px 0;
+            font-size: 22px;
+            font-weight: 500;
+            color: #fff;
+
+            @media (max-width: $breakpoint768) {
+                font-size: 18px;
+            }
+
+            @media (max-width: $breakpoint480) {
+                font-size: 14px;
+            }
+        }
+    }
+
+    &__blur{
+        filter: blur(13px);
+        outline: none;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+
+        &-img{
+            max-width: 270px;
+            margin-right: 15px;
+        }
+
+        &-title{
+            margin-top: 70px;
+            font-size: 22px;
+            font-weight: 500;
+            color: #fff;
+
+            @media (max-width: $breakpoint768) {
+                font-size: 18px;
+            }
+
+            @media (max-width: $breakpoint480) {
+                font-size: 14px;
+            }
+        }
+    }
+
+    &Modal{
+        &__list{
+            display: flex;
+            column-gap: 30px;
+            flex-wrap: wrap;
+            row-gap: 30px;
+            justify-content: center;
+            list-style: none;
+        }
+    }
+}
+
+.showModal{
+    &__search{
+        margin-bottom: 50px;
+
+        @media (max-width: $breakpoint480) {
+            margin-bottom: 30px;
+        }
+
+        &-input{
+            border-radius: 30px;
+            padding: 10px 25px;
+            background: black;
+            outline: none;
+            font-size: 16px;
+            color: #fff;
+            margin: 0 auto;
+    
+            @media (max-width: $breakpoint768) {
+                padding: 7px 20px;
+                font-size: 14px;
+            }
+
+            @media (max-width: $breakpoint480) {
+                font-size: 12px;
+            }
+        }
+    }
+}
